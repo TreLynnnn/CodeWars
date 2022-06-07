@@ -117,13 +117,31 @@
 //
 // For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
 
-function squareDigits(num){
+// function squareDigits(num){
+//
+//   let numStr = num + "";
+//   let total = "";
+//
+//   for(let i in numStr){
+//     total += (parseInt(numStr[i]**2 + ""))
+//   }
+//   return parseInt(total);
+// }
+// Your task is to convert strings to how they would be written by Jaden Smith. The strings are actual quotes from Jaden Smith, but they are not capitalized in the same way he originally typed them
+// String.prototype.toJadenCase = function () {
+//   let str = 'How can mirrors be real if our eyes aren\'t real';
+//   const arr = str.split(" ");
+//
+//   for(let i = 0; i < arr.length; i++){
+//     arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+//   }
+//   const str2 = arr.join(" ");
+//   return str2;
+// };
 
-  let numStr = num + "";
-  let total = "";
-
-  for(let i in numStr){
-    total += (parseInt(numStr[i]**2 + ""))
-  }
-  return parseInt(total);
+// Complete the function to return his total number of goals in all three leagues.
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  let sum = laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+ return sum;
 }
+goals(12,2,5);
