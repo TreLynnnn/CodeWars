@@ -78,18 +78,37 @@
 //
 // if bmi > 30 return "Obese"
 
-function bmi(weight, height) {
-let bmi = weight / height**2;
+// function bmi(weight, height) {
+// let bmi = weight / height**2;
+//
+// if (bmi<=18.5){
+//   return "Underweight"
+// } else if(bmi<=25.0){
+//   return "Normal"
+// }else if (bmi<=30.0){
+//   return "Overweight"
+// }else (bmi>30)
+// return "Obese";
+//
+// }
+//
+// console.log(bmi(213,64))
 
-if (bmi<=18.5){
-  return "Underweight"
-} else if(bmi<=25.0){
-  return "Normal"
-}else if (bmi<=30.0){
-  return "Overweight"
-}else (bmi>30)
-return "Obese";
+// Return the number (count) of vowels in the given string.
 
-}
+// We will consider a, e, i, o, u as vowels for this Kata (but not y).
 
-console.log(bmi(213,64))
+// The input string will only consist of lower case letters and/or spaces.
+
+// function getCount(str) {
+//   return (str.match(/[aeiou]/ig)||[]).length;
+//   }
+// getCount('abracadabra')
+
+// Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false
+
+function boolToWord( bool ){
+ const str = bool === true ? "Yes" : "No"
+return str
+  }
+boolToWord(true);
