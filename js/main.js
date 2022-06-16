@@ -23,11 +23,22 @@
 // The function should take three arguments - operation(string/char), value1(number), value2(number).
 // The function should return result of numbers after applying the chosen operation.
 
-  function basicOp(operation, value1, value2)
-{
-  // Code
-  if(operation == '+')  return value1 + value2
-  if(operation == '-')  return value1 - value2
-  if(operation == '*')  return value1 * value2
-  if(operation == '/')  return value1 / value2
-}
+//   function basicOp(operation, value1, value2)
+// {
+//   // Code
+//   if(operation == '+')  return value1 + value2
+//   if(operation == '-')  return value1 - value2
+//   if(operation == '*')  return value1 * value2
+//   if(operation == '/')  return value1 / value2
+// }
+
+
+// Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+    function even_or_odd(number) {
+      if( number % 2 == 0){
+        return 'Even';
+      }else(number % 2 !== 0)
+        return 'Odd';
+      }
+
+console.log(even_or_odd(2))
