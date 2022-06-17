@@ -34,11 +34,25 @@
 
 
 // Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
-    function even_or_odd(number) {
-      if( number % 2 == 0){
-        return 'Even';
-      }else(number % 2 !== 0)
-        return 'Odd';
-      }
+//     function even_or_odd(number) {
+//       if( number % 2 == 0){
+//         return 'Even';
+//       }else(number % 2 !== 0)
+//         return 'Odd';
+//       }
+//
+// console.log(even_or_odd(2))
 
-console.log(even_or_odd(2))
+// Write a function which converts the input string to uppercase.
+
+// function makeUpperCase(str) {
+// // Code here
+// return str.toUpperCase();
+// }
+//  console.log(makeUpperCase('hello'))
+
+
+function solution(str){
+  return str.split("").reverse().join("");
+}
+console.log(solution('hello'))
