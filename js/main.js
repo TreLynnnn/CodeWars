@@ -106,9 +106,24 @@
 // getCount('abracadabra')
 
 // Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false
+//
+// function boolToWord( bool ){
+//  const str = bool === true ? "Yes" : "No"
+// return str
+//   }
+// boolToWord(true);
 
-function boolToWord( bool ){
- const str = bool === true ? "Yes" : "No"
-return str
+// Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
+//
+// For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
+
+function squareDigits(num){
+
+  let numStr = num + "";
+  let total = "";
+
+  for(let i in numStr){
+    total += (parseInt(numStr[i]**2 + ""))
   }
-boolToWord(true);
+  return parseInt(total);
+}
