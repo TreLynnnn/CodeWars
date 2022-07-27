@@ -140,8 +140,22 @@
 // };
 
 // Complete the function to return his total number of goals in all three leagues.
-function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
-  let sum = laLigaGoals + copaDelReyGoals + championsLeagueGoals;
- return sum;
+// function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+//   let sum = laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+//  return sum;
+// }
+// goals(12,2,5);
+
+//Print Errors
+// You have to write a function printer_error which given a string will return the error rate of the printer as a string representing a rational whose numerator is the number of errors and the denominator the length of the control string. Don't reduce this fraction to a simpler expression.
+
+// The string has a length greater or equal to one and contains only letters from ato z.
+
+function printerError(s) {
+    const dic = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'];
+    const splitString = s.split('');
+    let error = 0;
+    splitString.map((x) => dic.includes(x) === false ? error += 1 : error += 0);
+
+   return `${error}/${s.length}`;
 }
-goals(12,2,5);
