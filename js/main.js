@@ -186,16 +186,30 @@
 //Unordered string
 //Count the number of occurrences of each character and return it as a list of tuples in order of appearance. For empty output return an empty list.
 
-var orderedCount = function (text) {
-   // Implement me!
-  const splitStr = text.split('');
-  const str = [...new Set(splitStr)];
+// var orderedCount = function (text) {
+//    // Implement me!
+//   const splitStr = text.split('');
+//   const str = [...new Set(splitStr)];
+//
+//   let resultArr = [];
+//
+//   for (let i = 0; i <= str.length-1; i += 1) {
+//     resultArr.push([str[i], splitStr.filter((s) => s === str[i]).length]);
+//   }
+//
+//   return resultArr;
+// }
 
-  let resultArr = [];
 
-  for (let i = 0; i <= str.length-1; i += 1) {
-    resultArr.push([str[i], splitStr.filter((s) => s === str[i]).length]);
-  }
+//Count the divisors of a number
+// Count the number of divisors of a positive integer n.
+//
+// Random tests go up to n = 500000.
 
-  return resultArr;
+let output = 0;
+    for (let i=1; i<=n; i++) {
+      if (n % i == 0) {
+        output += 1;
 }
+}
+  return output;
