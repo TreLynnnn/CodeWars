@@ -267,11 +267,14 @@
 
 // It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
 
-function removeChar(str){
- //You got this!
- let splitStr = str.split('')
- let removeFirst = splitStr.pop()
- let removeLast = splitStr.shift()
- const joinStr = splitStr.join('')
- return joinStr
-};
+// function removeChar(str){
+//  //You got this!
+//  let splitStr = str.split('')
+//  let removeFirst = splitStr.pop()
+//  let removeLast = splitStr.shift()
+//  const joinStr = splitStr.join('')
+//  return joinStr
+// };
+
+// In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number
+function highAndLow(numbers){ numbers = numbers.split(' '); return `${Math.max(...numbers)} ${Math.min(...numbers)}`; }
