@@ -240,14 +240,27 @@
 //   }
 // }
 
+// L1: Set Alarm
 // Write a function named setAlarm which receives two parameters. The first parameter, employed, is true whenever you are employed and the second parameter, vacation is true whenever you are on vacation.
 //
 // The function should return true if you are employed and not on vacation (because these are the circumstances under which you need to set an alarm). It should return false otherwise.
 
-function setAlarm(employed, vacation){
- if(employed == true && vacation == false){
-   return true
- }else{
-   return false
- }
+// function setAlarm(employed, vacation){
+//  if(employed == true && vacation == false){
+//    return true
+//  }else{
+//    return false
+//  }
+// }
+// Disemvowel Trolls
+// Your task is to write a function that takes a string and return a new string with all vowels removed.
+// function disemvowel(str) {
+//   let noVowels = str.replace(/[aeiou]/gi, '')
+//   return noVowels;
+// }
+
+// Create a phone number
+// Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
+function createPhoneNumber(numbers){
+  return numbers.join('').replace(/(\d{3})(\d{3})(\d{4})/,'($1) $2-$3');
 }
