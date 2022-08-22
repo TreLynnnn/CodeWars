@@ -299,14 +299,21 @@
 
 
 
-function DNAStrand(dna){
-  let sequence = {
-    "A": "T",
-    "T": "A",
-    "G": "C",
-    "C": "G"
-}
-  return dna.replace(/A|T|G|C/g, function(matched) {
-    return sequence[matched];
-});
+// function DNAStrand(dna){
+//   let sequence = {
+//     "A": "T",
+//     "T": "A",
+//     "G": "C",
+//     "C": "G"
+// }
+//   return dna.replace(/A|T|G|C/g, function(matched) {
+//     return sequence[matched];
+// });
+// }
+
+// Remove String spaces
+// Simple, remove the spaces from the string, then return the resultant string.
+function noSpace(x){
+  let removeSpace = x.replace(/\s+/g, '');
+  return removeSpace
 }
