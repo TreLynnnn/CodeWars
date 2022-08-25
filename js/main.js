@@ -313,7 +313,14 @@
 
 // Remove String spaces
 // Simple, remove the spaces from the string, then return the resultant string.
-function noSpace(x){
-  let removeSpace = x.replace(/\s+/g, '');
-  return removeSpace
+// function noSpace(x){
+//   let removeSpace = x.replace(/\s+/g, '');
+//   return removeSpace
+// }
+
+// Descending order
+// Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+
+function descendingOrder(n){
+    return parseInt((n+'').split('').sort().reverse().join(''))
 }
