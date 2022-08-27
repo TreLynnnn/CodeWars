@@ -332,6 +332,15 @@
 //
 // If the input array is empty consider it as: [0] (array with a zero).
 
-function oddOrEven(array) {
-    return array.reduce( function (sum, item) { return sum + item }, 0) % 2 == 0 ? 'even': 'odd';
-  }
+// function oddOrEven(array) {
+//     return array.reduce( function (sum, item) { return sum + item }, 0) % 2 == 0 ? 'even': 'odd';
+//   }
+
+// Square(n) Sum
+// Complete the square sum function so that it squares each number passed into it and then sums the results together.
+
+function squareSum(numbers){
+
+return numbers.reduce( (acc, cur) => acc + (cur **2), 0)
+
+}
