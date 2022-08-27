@@ -321,6 +321,17 @@
 // Descending order
 // Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
 
-function descendingOrder(n){
-    return parseInt((n+'').split('').sort().reverse().join(''))
-}
+// function descendingOrder(n){
+//     return parseInt((n+'').split('').sort().reverse().join(''))
+// }
+
+//Odd or Even
+// Given a list of integers, determine whether the sum of its elements is odd or even.
+//
+// Give your answer as a string matching "odd" or "even".
+//
+// If the input array is empty consider it as: [0] (array with a zero).
+
+function oddOrEven(array) {
+    return array.reduce( function (sum, item) { return sum + item }, 0) % 2 == 0 ? 'even': 'odd';
+  }
