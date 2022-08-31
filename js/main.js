@@ -339,8 +339,18 @@
 // Square(n) Sum
 // Complete the square sum function so that it squares each number passed into it and then sums the results together.
 
-function squareSum(numbers){
+// function squareSum(numbers){
+//
+// return numbers.reduce( (acc, cur) => acc + (cur **2), 0)
+//
+// }
 
-return numbers.reduce( (acc, cur) => acc + (cur **2), 0)
-
-}
+// Color Ghost
+// Create a class Ghost
+// 
+// Ghost objects are instantiated without any arguments.
+//
+// Ghost objects are given a random color attribute of "white" or "yellow" or "purple" or "red" when instantiated
+var Ghost = function() {
+  this.color = ["white","yellow","purple","red"][Math.floor(Math.random() * 4)];
+};
