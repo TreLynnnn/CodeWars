@@ -354,3 +354,11 @@
 var Ghost = function() {
   this.color = ["white","yellow","purple","red"][Math.floor(Math.random() * 4)];
 };
+
+// String to Number
+// We need a function that can transform a string into a number. What ways of achieving this do you know?
+const stringToNumber = function(str){
+  // put your code here
+  let toString = parseInt(str)
+  return toString;
+}
