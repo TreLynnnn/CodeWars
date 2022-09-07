@@ -351,6 +351,14 @@
 // Ghost objects are instantiated without any arguments.
 //
 // Ghost objects are given a random color attribute of "white" or "yellow" or "purple" or "red" when instantiated
-var Ghost = function() {
-  this.color = ["white","yellow","purple","red"][Math.floor(Math.random() * 4)];
-};
+// var Ghost = function() {
+//   this.color = ["white","yellow","purple","red"][Math.floor(Math.random() * 4)];
+// };
+
+// Counting Sheep
+// Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+let counter = 0
+    arrayOfSheep.forEach(sheep => {
+        if(sheep) counter++
+    })
+    return counter
