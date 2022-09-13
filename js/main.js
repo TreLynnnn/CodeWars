@@ -351,7 +351,7 @@
 // Ghost objects are instantiated without any arguments.
 //
 // Ghost objects are given a random color attribute of "white" or "yellow" or "purple" or "red" when instantiated
-<<<<<<< HEAD
+
 // var Ghost = function() {
 //   this.color = ["white","yellow","purple","red"][Math.floor(Math.random() * 4)];
 // };
@@ -363,7 +363,7 @@ let counter = 0
         if(sheep) counter++
     })
     return counter
-=======
+
 var Ghost = function() {
   this.color = ["white","yellow","purple","red"][Math.floor(Math.random() * 4)];
 };
@@ -379,4 +379,4 @@ const stringToNumber = function(str){
 function smash (words) {
   return words.join(' ')
 };
->>>>>>> 3262f3a4831666ef28de881de85159b142ce41fe
+
