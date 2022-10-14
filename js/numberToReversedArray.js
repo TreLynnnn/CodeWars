@@ -12,8 +12,6 @@
 
 // create function that accepts non-negative number
 function digitize(n){
-    let numToStr = n.toString()
-    let splitStr = numToStr.split(" ")
-    console.log(splitStr)
+    return n.toString().split('').reverse().map(Number)
 }
 digitize(321);
