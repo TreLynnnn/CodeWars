@@ -6,5 +6,5 @@
 
 function abbrevName(name){
     // grab the first letter in each name and return them with dot in between
-   return name.split(' ').map( name => name[0]).join(".")
+   return name.split(' ').map( name => name[0]).join(".").toUppercase()
 }
